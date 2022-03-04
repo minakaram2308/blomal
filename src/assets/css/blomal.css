@@ -86,6 +86,7 @@ h6 {
 
 .parallex {
     background-image: url(../img/gray-bg.jpg);
+    background-size: cover;
     background-attachment: fixed;
 }
 

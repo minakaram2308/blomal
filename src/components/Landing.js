@@ -10,9 +10,9 @@ import time from "../assets/img/time.png";
 
 export default function Landing() {
   return (
-    <div className="parallex">
+    <div className="">
       {/* mainHeader */}
-      <section className="mainHeader">
+      <section className="mainHeader parallex">
         <div class="bg-shape"></div>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-dark pt-4">
@@ -33,7 +33,7 @@ export default function Landing() {
         </div>
       </section>
       {/* <The_right_way */}
-      <section className="theRight text-center">
+      <section className="theRight text-center parallex">
         <h3>The right way to invest? It's up to you.</h3>
         <p>
           Everyone has different goals when it comes to their life, their money,
