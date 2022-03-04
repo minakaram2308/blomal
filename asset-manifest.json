@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/blomal/static/css/main.94dfff20.css",
+    "main.js": "/blomal/static/js/main.942a8cd0.js",
+    "static/media/time.png": "/blomal/static/media/time.b62716bc4c9e6bdaf231.png",
+    "static/media/JaliArabicBold.ttf": "/blomal/static/media/JaliArabicBold.ce79ff6f4de4768f5570.ttf",
+    "static/media/JaliArabicMedium.ttf": "/blomal/static/media/JaliArabicMedium.94aebeb6b0b800f04bb7.ttf",
+    "static/media/JaliArabicRegular.ttf": "/blomal/static/media/JaliArabicRegular.fe8d82c20e2c074b8819.ttf",
+    "static/media/fa-solid-900.ttf": "/blomal/static/media/fa-solid-900.56f958545ad7789238b6.ttf",
+    "static/media/fa-brands-400.ttf": "/blomal/static/media/fa-brands-400.6d60cc0a73061e1e6aad.ttf",
+    "static/media/fa-solid-900.woff2": "/blomal/static/media/fa-solid-900.a66b80c86247807d0747.woff2",
+    "static/media/fa-brands-400.woff2": "/blomal/static/media/fa-brands-400.d483dc55a91d0261f6ef.woff2",
+    "static/media/gray-bg.jpg": "/blomal/static/media/gray-bg.1d592d232f75256da52c.jpg",
+    "static/media/main.png": "/blomal/static/media/main.557682f0558a1a3c9bcf.png",
+    "static/media/fa-regular-400.ttf": "/blomal/static/media/fa-regular-400.abc1663def2f25b507c3.ttf",
+    "static/media/fa-regular-400.woff2": "/blomal/static/media/fa-regular-400.8014bbf002ecb7a33b8f.woff2",
+    "static/media/logo.png": "/blomal/static/media/logo.187dd9378d610e78ca37.png",
+    "static/media/footerbg.png": "/blomal/static/media/footerbg.a6556bc9e7ffbaa756e5.png",
+    "index.html": "/blomal/index.html",
+    "main.94dfff20.css.map": "/blomal/static/css/main.94dfff20.css.map",
+    "main.942a8cd0.js.map": "/blomal/static/js/main.942a8cd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94dfff20.css",
+    "static/js/main.942a8cd0.js"
+  ]
+}
