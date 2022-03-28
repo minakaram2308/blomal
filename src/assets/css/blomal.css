@@ -15,11 +15,12 @@
 
 * {
     font-family: Jali-r;
-    color: #000;
+    color: #001467;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #f0ede8;
 }
 
 h1,
@@ -33,6 +34,7 @@ h6 {
 
 .primaryC {
     color: #181E4B;
+    line-height: 1;
 }
 
 .primaryBg {
@@ -48,40 +50,31 @@ h6 {
 }
 
 .navbar-brand img {
-    height: 85px;
+    height: 95px;
 }
 
 .navbar {
     position: absolute;
-    margin-left: -12px;
-}
-
-.bg-shape {
-    position: absolute;
-    height: 190%;
-    width: 100%;
-    display: block;
-    border-radius: 120px;
-    background: linear-gradient(-47deg, #8731E8 0%, #4528DC 100%);
-    bottom: 0;
-    right: 0;
-    -webkit-transform: translate(35%, -28%) rotate(-35deg);
-    transform: translate(35%, -28%) rotate(-35deg);
+    padding-left: 4rem;
+    margin-left: -10px;
 }
 
 .mainHeader {
     position: relative;
 }
-.mainHeader .row{
-    height: 550px;
+
+.mainHeader .row {
+    height: 625px;
 }
+
 .mainHeader h5 {
     font-size: 1.5rem;
 }
 
 .mainHeader p {
-    color: #707070;
-    font-size: 1.4rem;
+    color: #4d4d4d;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .parallex {
@@ -90,16 +83,26 @@ h6 {
     background-attachment: fixed;
 }
 
+.pl4 {
+    padding-left: 4rem;
+}
+
+.about p i {
+    font-size: 1rem;
+    color: #062d88;
+}
+
 .theRight {
     padding: 4rem 0;
 }
 
-.goalBlock {
-    margin: 1.2rem 2.5rem;
+.theRight p {
+    font-size: 1rem;
+    margin-top: 0.8rem;
 }
 
-.goalBlock p {
-    margin: 0
+.goalBlock {
+    margin: 1.2rem 2.5rem;
 }
 
 .goalBlock img {
@@ -112,7 +115,387 @@ h6 {
     height: 280px;
     display: flex;
 }
-.waitingApproval p{
+
+.waitingApproval p {
     font-size: 1.5rem;
     text-align: center;
+}
+
+/* send email button >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.registration-form {
+    transform: translate(0%, 0%);
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 15px;
+}
+
+.registration-form header {
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 15px 15px 0 0;
+}
+
+.registration-form header p {
+    font-size: 17px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.registration-form .input-section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 2;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+}
+
+.registration-form .input-section.folded {
+    width: 95%;
+    margin-top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+.registration-form .input-section.folded input {
+    background-color: #e9e2c0;
+}
+
+.registration-form .input-section.folded span {
+    background-color: #e9e2c0;
+}
+
+.registration-form .input-section.folded+.folded {
+    width: 90%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 0;
+}
+
+.registration-form .input-section.folded+.folded input {
+    background-color: #e1bcef;
+}
+
+.registration-form .input-section.folded+.folded span {
+    background-color: #e1bcef;
+}
+
+.registration-form .input-section.fold-up {
+    margin-top: -75px;
+}
+
+.registration-form input {
+    background: #fff;
+    color: #4528DC;
+    width: 80%;
+    border: 0;
+    padding: 20px 40px;
+    margin: 0;
+    box-shadow: inset 0 0 25px #c6c6c6;
+}
+
+.registration-form input:focus {
+    outline: none;
+}
+
+.registration-form input::placeholder {
+    color: #8f8fd6;
+    font-weight: 100;
+}
+
+.animated-button {
+    width: 20%;
+    background-color: #d4d4ff;
+}
+
+.animated-button span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 75px;
+    text-align: center;
+    height: 75px;
+    transition: all 0.2s ease-in;
+}
+
+.animated-button span i {
+    font-size: 25px;
+    color: #9999f8;
+}
+
+.animated-button .next-button {
+    background: transparent;
+    color: #9999f8;
+    font-weight: 100;
+    width: 100%;
+    border: 0;
+}
+
+.next {
+    margin-top: -75px;
+}
+
+.success {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 75px;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+    background: linear-gradient(338deg, #0042c9, #03a53e);
+    margin-top: -75px;
+}
+
+.success p {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.animated-button button {
+    width: 100%;
+    border-radius: 0;
+    height: 100%;
+}
+
+/* >>>>> modernForm >>>>>>>>>>>>>>>>>>>>>>> */
+.contact_us {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 2.5rem 1.8rem;
+    background-color: #fff;
+    font-size: 1.1rem;
+}
+
+.modernForm {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 2.5rem 1.8rem;
+    background-color: #fff;
+}
+
+.modernForm .group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.modernForm input,
+.modernForm textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+.modernForm input:focus,
+.modernForm textarea:focus {
+    outline: none;
+}
+
+/* LABEL ======================================= */
+.modernForm label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 10px;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+}
+
+/* active state */
+.modernForm input:focus~label,
+.modernForm input:valid~label,
+.modernForm textarea:focus~label,
+.modernForm textarea:valid~label {
+    top: -8px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.modernForm .bar {
+    position: relative;
+    display: block;
+}
+
+.modernForm .bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+}
+
+.modernForm .bar:before {
+    left: 50%;
+}
+
+.modernForm .bar:after {
+    right: 50%;
+}
+
+/* active state */
+.modernForm input:focus~.bar:before,
+.modernForm input:focus~.bar:after,
+.modernForm textarea:focus~.bar:before,
+.modernForm textarea:focus~.bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.modernForm .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+.modernForm input:focus~.highlight,
+.modernForm textarea:focus~.highlight {
+    -webkit-animation: inputHighlighter 0.5s ease;
+    -moz-animation: inputHighlighter 0.5s ease;
+    animation: inputHighlighter 0.5s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.howitworks {
+    position: relative;
+}
+
+.howitworks .howBlock {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 2.2rem 1rem;
+    background-color: #fff;
+    height: 330px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.howitworks .howBlock img {
+    height: 60px
+}
+
+.howitworks .howrect1 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 120px;
+}
+
+.howitworks .howrect4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px !important;
+}
+
+.howrect2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 65px !important;
+}
+
+.howrect3 {
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    height: 300px !important;
+}
+
+.faq {
+    position: absolute;
+    top: 0;
+    width: 175px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.faqBlock .accordion__button {
+    background-color: #f0ede8;
+}
+div[aria-expanded="true"]{
+    background-color: #f7f7f7 !important;
+    border-bottom: 1px solid #d3d3d3;
+  }
+.faqBlock .accordion__panel {
+    background-color: #f7f7f7;
+}
+
+.faqBlock .accordion__panel p {
+    margin-bottom: 0;
+}
+.btn-primary {
+    background-color: #0009b2;
+    border-color: #0009b2;
 }
