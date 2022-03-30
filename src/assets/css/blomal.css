@@ -20,7 +20,7 @@
 
 body {
     overflow-x: hidden;
-    background-color: #f0ede8;
+    background-color: #fff;
 }
 
 h1,
@@ -50,7 +50,8 @@ h6 {
 }
 
 .navbar-brand img {
-    height: 95px;
+    height: 90px;
+    margin-left: -10px;
 }
 
 .navbar {
@@ -90,6 +91,8 @@ h6 {
 .about p i {
     font-size: 1rem;
     color: #062d88;
+    margin-top: 0.3rem;
+    margin-right: 0.4rem;
 }
 
 .theRight {
@@ -482,19 +485,24 @@ h6 {
 }
 
 .faqBlock .accordion__button {
-    background-color: #f0ede8;
-}
-div[aria-expanded="true"]{
-    background-color: #f7f7f7 !important;
-    border-bottom: 1px solid #d3d3d3;
-  }
-.faqBlock .accordion__panel {
     background-color: #f7f7f7;
+}
+
+div[aria-expanded="true"] {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #d3d3d3;
+}
+.accordion {
+    box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px;
+}
+.faqBlock .accordion__panel {
+    background-color: #ffffff;
 }
 
 .faqBlock .accordion__panel p {
     margin-bottom: 0;
 }
+
 .btn-primary {
     background-color: #0009b2;
     border-color: #0009b2;

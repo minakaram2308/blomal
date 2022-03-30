@@ -8,13 +8,13 @@ import {
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 import logo from "../assets/img/logo.png";
-import main from "../assets/img/main.png";
+import main from "../assets/img/thumb.png";
 import goal1 from "../assets/img/goals/1.png";
 import goal2 from "../assets/img/goals/2.png";
 import goal3 from "../assets/img/goals/3.png";
 import goal4 from "../assets/img/goals/4.png";
 import goal5 from "../assets/img/goals/5.png";
-import about from "../assets/img/about.png";
+import about from "../assets/img/ab.png";
 
 import how1 from "../assets/img/howitworks/1.png";
 import how2 from "../assets/img/howitworks/2.png";
@@ -60,12 +60,12 @@ export default function Landing() {
                 Invest safely and without any prior knowledge
               </h2>
               <p>
-                You can start now with only SR500 to build your wealth right
+                You can start now with only SAR 1000 to build your wealth right
                 away.
               </p>
             </div>
-            <div className="col-md-6 position-relative">
-              <img src={main} alt="goal" className="w-100 position-absolute" />
+            <div className="col-md-6 m-auto">
+              <img src={main} alt="goal" className="w-100" />
             </div>
           </div>
         </div>
@@ -79,15 +79,24 @@ export default function Landing() {
             </div>
             <div className="col-md-6 m-auto about">
               <h3 className="mb-4">About Blomal</h3>
-              <p>
+              <p className="d-flex">
                 <i className="fa fa-check"></i> Blomal is a digital investment
                 management service.
               </p>
-              <p>
-                <i className="fa fa-check"></i> We create personalized portfolios to help investors achieve their their long term goals with risk-optimized returns.
+              <p className="d-flex">
+                <i className="fa fa-check"></i> We create personalized
+                portfolios to help investors achieve their their long term goals
+                with risk-optimized returns.
               </p>
-              <p>
-                <i className="fa fa-check"></i> We help you invest in fully-diversified portfolios of low-cost index funds across 6 liquid asset classes, based on your risk profile. We use established and reputable methodologies coupled with advanced technology to simplify the entire investing experience by automatic the rebalancing, dividend reinvesting, and tax optimization services which are time consuming, costly and complex or were only available to the ultra-rich.
+              <p className="d-flex">
+                <i className="fa fa-check"></i> We help you invest in
+                fully-diversified portfolios of low-cost index funds across 6
+                liquid asset classes, based on your risk profile. We use
+                established and reputable methodologies coupled with advanced
+                technology to simplify the entire investing experience by
+                automatic the rebalancing, dividend reinvesting, and tax
+                optimization services which are time consuming, costly and
+                complex or were only available to the ultra-rich.
               </p>
             </div>
           </div>
@@ -97,7 +106,8 @@ export default function Landing() {
       {/* <The_right_way */}
       <section className="theRight text-center">
         <h3>
-        You deserve an investment portfolio that matches your ambitions and goals
+          You deserve an investment portfolio that matches your ambitions and
+          goals
         </h3>
         <p>
           Everyone has different goals when it comes to their life, their money,
@@ -206,7 +216,8 @@ export default function Landing() {
                 <img src={how4} alt="how" />
                 <p className="my-3 secondaryC">INVEST</p>
                 <p className="m-0">
-                Invest in your suggested or preferred Blomal portfolios for a low fee and select any alpha strategies you want in addition!.
+                  Invest in your suggested or preferred Blomal portfolios for a
+                  low fee and select any alpha strategies you want in addition!.
                 </p>
               </div>
             </div>
@@ -223,92 +234,91 @@ export default function Landing() {
               <Accordion>
                 <AccordionItem>
                   <AccordionItemHeading>
-                    <AccordionItemButton>
-                      The importance of long term compound Investing
-                    </AccordionItemButton>
+                    <AccordionItemButton>What is Blomal</AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      Exercitation in fugiat est ut ad ea cupidatat ut in
-                      cupidatat occaecat ut occaecat consequat est minim minim
-                      esse tempor laborum consequat esse adipisicing eu
-                      reprehenderit enim.
+                      ● Blomal is a digital platform that provides automated,
+                      algorithmic investment services with minimal human
+                      supervision.
                     </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>What is BLOMAL?</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
                     <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>What is BLOMAL?</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>Who is BLOMAL?</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>BLOMAL Technology</AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
+                      ● Blomal automate and optimize passive indexing strategies
+                      based on modern portfolio theory
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      Why does Blomal exist?
+                      What investments does Blomal offer?
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
+                      For each of your financial goals, Blomal recommends a
+                      specific portfolio allocation of our recommended portfolio
+                      strategy. This portfolio strategy is designed to reflect
+                      the total world market to help maximize expected returns
+                      while minimizing risk.
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      Where do I sign up?
+                      The importance of long term compound Investing?
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      In ad velit in ex nostrud dolore cupidatat consectetur ea
-                      in ut nostrud velit in irure cillum tempor laboris sed
-                      adipisicing eu esse duis nulla non.
+                      Compounding is the ability of an asset to generate
+                      earnings, which are then reinvested or remain invested
+                      with the goal of generating their own earnings. In other
+                      words, compounding refers to generating earnings from
+                      previous earnings. The wonder of compounding (sometimes
+                      called “compound interest”) has the potential to transform
+                      your working money into an income-generating tool.
+                      Compounding is the process of generating earnings on an
+                      asset’s reinvested earnings. To work, it requires three
+                      things: the original investment remains invested, the
+                      reinvestment of earnings and time. The more time you give
+                      your investments, the more you may be able to accelerate
+                      the income potential of your original investment.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Dollar-Cost Averaging or Lump Sum Investing?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Dollar-cost averaging (DCA), is making regularly scheduled
+                      investments into an investment fund over a long period of
+                      time. For example, investing an equal amount on the 15th
+                      of every month. DCA has been an extremely controversial
+                      and hotly debated approach to investing. This applies both
+                      to practitioners and theoreticians, as well as internet
+                      discussion groups, which contain lively debates on the
+                      subject, with a fascinating mixture of beliefs,
+                      prejudices, opinions, facts and statistics. So, what are
+                      investors to believe and do? Read on to learn both sides
+                      of the argument.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      Can I move my money out if I want to?
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      Yes, you can withdraw your money at any time with no fees
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
