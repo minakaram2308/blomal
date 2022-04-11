@@ -7,6 +7,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
+import "../../src/assets/css/blomal_ar.css";
 import logo from "../assets/img/logo.png";
 import main from "../assets/img/thumb.png";
 import goal1 from "../assets/img/goals/1.png";
@@ -26,9 +27,9 @@ import howrect3 from "../assets/img/howitworks/rect3.png";
 import howrect4 from "../assets/img/howitworks/rect4.png";
 
 import faq from "../assets/img/faq.png";
-import sa from "../assets/img/sa.svg";
+import uk from "../assets/img/uk.png";
 
-export default function Landing() {
+export default function LandingAr() {
   window.onload = function () {
     document.querySelector(".showbox").style.opacity = "0";
     document.querySelector(".showbox").style.zIndex = "-1";
@@ -40,17 +41,17 @@ export default function Landing() {
   return (
     <div className="">
       {/* mainHeader */}
-      <div className="showbox">
-        <div className="loader">
-          <svg className="circular" viewBox="25 25 50 50">
+      <div class="showbox">
+        <div class="loader">
+          <svg class="circular" viewBox="25 25 50 50">
             <circle
-              className="path"
+              class="path"
               cx="50"
               cy="50"
               r="20"
               fill="none"
-              strokeWidth="2"
-              strokeMiterlimit="10"
+              stroke-width="2"
+              stroke-miterLimit="10"
             />
           </svg>
         </div>
@@ -58,13 +59,10 @@ export default function Landing() {
 
       <section className="mainHeader" id="Home">
         <div className="container-fluid m-auto">
-          <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-                <img src={logo} alt="goal" />
-              </a>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
               <button
-                className="navbar-toggler"
+                class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarTogglerDemo03"
@@ -72,41 +70,43 @@ export default function Landing() {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span className="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
               </button>
-           
-              <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#Join">
-                      Join
+              <a className="navbar-brand" href="/">
+                <img src={logo} alt="goal" />
+              </a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Join">
+                      انضم
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#About">
-                      About
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">
+                      عن بلومال
                     </a>
                   </li>
 
                   <li className="nav-item">
                     <a className="nav-link" href="#HowItWorks">
-                      How It Works
+                      كيف نعمل
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#Faq">
-                      FAQ
+                      أسئلة متكررة
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#Contact">
-                      Contact us
+                      اتصل بنا
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link ar" href="#Contact">
-                      عربى
-                      <img src={sa} className="lang" alt="العربية" />
+                    <a className="nav-link en" href="#Contact">
+                      English
+                      <img src={uk} className="lang" alt="English" />
                     </a>
                   </li>
                 </ul>
@@ -116,32 +116,32 @@ export default function Landing() {
           <div className="row justify-content-center my-5 py-5">
             <div className="col-md-12 text-center m-auto">
               <h5 className="secondaryC mb-3">
-                Investing has become easier and more profitable with Blomal
+                أصبح الاستثمار أسهل وأكثر ربحية مع بلومال
               </h5>
               <h2 className="primaryC mb-3 fa-3x">
-                Invest safely and without any prior knowledge
+                استثمر بأمان ودون أي خبرة مسبقة
               </h2>
               <p className="mb-5">
-                You can start now with only SAR 1000 to build your wealth right
-                away.
+                تقدر الآن تبدأ بناء محفظتك وتستثمر وتبني ثروتك بمبلغ 1000 ريال
+                سعودي فقط
               </p>
             </div>
 
             {/* <div className="col-md-4">
-              <div className="registration-form">
+              <div class="registration-form">
                 <header>
                   <h3 className="m-0">Join us</h3>
                   <p>Join our waiting List</p>
                 </header>
-                <div className="input-section email-section">
+                <div class="input-section email-section">
                   <input
-                    className="email"
+                    class="email"
                     type="email"
                     placeholder="Enter your email"
                     autocomplete="off"
                   />
-                  <div className="animated-button">
-                    <button className="btn btn-success" onClick={shoot}>
+                  <div class="animated-button">
+                    <button class="btn btn-success" onClick={shoot}>
                       <h3 className="text-white">Join</h3>
                     </button>
                   </div>
@@ -154,34 +154,34 @@ export default function Landing() {
             <div className="container pt-5" id="Join">
               <div className="row justify-content-center">
                 <div className="col-md-8">
-                  <form className="modernForm">
+                  <form class="modernForm">
                     <div className="row">
-                      <div className="col-md-12 mb-3">
-                        <h3>Join our waiting List</h3>
+                      <div class="col-md-12 mb-3">
+                        <h3>انضم لقائمة الانتظار</h3>
                       </div>
-                      <div className="col-md-6 group">
+                      <div class="col-md-6 group">
                         <input type="text" required></input>
-                        <span className="bar"></span>
-                        <label>First Name</label>
+                        <span class="bar"></span>
+                        <label>الأسم الاول</label>
                       </div>
-                      <div className="col-md-6 group">
+                      <div class="col-md-6 group">
                         <input type="text" required></input>
-                        <span className="bar"></span>
-                        <label>Last Name</label>
+                        <span class="bar"></span>
+                        <label>الأسم الاخير</label>
                       </div>
-                      <div className="col-md-6 group">
+                      <div class="col-md-6 group">
                         <input type="email" required></input>
-                        <span className="bar"></span>
-                        <label>Email</label>
+                        <span class="bar"></span>
+                        <label>الايميل</label>
                       </div>
-                      <div className="col-md-6 group">
+                      <div class="col-md-6 group">
                         <input type="text" required></input>
-                        <span className="bar"></span>
-                        <label>Phone</label>
+                        <span class="bar"></span>
+                        <label>الهاتف</label>
                       </div>
-                      <div className="col-md-12 text-end">
+                      <div class="col-md-12 text-end">
                         <button className="btn btn-primary">
-                          <i className="fa fa-paper-plane text-white"></i> Send
+                          ارسال <i className="fa fa-paper-plane text-white"></i>
                         </button>
                       </div>
                     </div>
@@ -200,25 +200,24 @@ export default function Landing() {
               <img src={main} alt="goal" className="w-100" />
             </div>
             <div className="col-md-6 m-auto about">
-              <h3 className="mb-4">About Blomal</h3>
+              <h3 className="mb-4">عن بلومال</h3>
               <p className="d-flex">
-                <i className="fa fa-check"></i> Blomal is a digital investment
-                management service.
+                <i className="fa fa-check"></i> بلومال هي خدمة لإدارة الاستثمار
+                الرقمي
               </p>
               <p className="d-flex">
-                <i className="fa fa-check"></i> We create personalized
-                portfolios to help investors achieve their their long term goals
-                with risk-optimized returns.
+                <i className="fa fa-check"></i> نقوم بإنشاء محافظ شخصية لمساعدة
+                المستثمرين على تحقيق أهدافهم طويلة المدى مع عوائد محسّنة للمخاطر
               </p>
               <p className="d-flex">
-                <i className="fa fa-check"></i> We help you invest in
-                fully-diversified portfolios of low-cost index funds across 6
-                liquid asset classes, based on your risk profile. We use
-                established and reputable methodologies coupled with advanced
-                technology to simplify the entire investing experience by
-                automatic the rebalancing, dividend reinvesting, and tax
-                optimization services which are time consuming, costly and
-                complex or were only available to the ultra-rich.
+                <i className="fa fa-check"></i> نحن نساعدك على الاستثمار في
+                محافظ متنوعة بالكامل مكونة من صناديق المؤشرات منخفضة التكلفة عبر
+                ستة فئات من الأصول المختلفة وذلك بناءً على ملف المخاطر الخاص بك.
+                كما نستخدم طرق علمية متقدمة تقيس مدى المخاطر المستهدف مقابل
+                العائد المطلوب إلى جانب التكنولوجيا المتقدمة لتبسيط تجربة
+                الاستثمار بأكملها عن طريق إنشاء واختيار المحفظة الاستثمارية
+                الملائمة للفرد بالاضافة لإعادة التوازن التلقائي وإعادة استثمار
+                الأرباح
               </p>
             </div>
           </div>
@@ -228,34 +227,32 @@ export default function Landing() {
       {/* <The_right_way */}
       <section className="theRight text-center pt-5 my-3">
         <div className="container-fluid">
-          <h3>
-            You deserve an investment portfolio that matches your ambitions and
-            goals
-          </h3>
+          <h3>أنت تستحق محفظة استثمارية تتناسب مع طموحاتك وأهدافك</h3>
           <p>
-            Everyone has different goals when it comes to their life, their
-            money, and their investment plans.
+            لكل شخص أهداف مختلفة عندما يتعلق الأمر بحياته وأمواله وخططه
+            الاستثمارية.
           </p>
           <div className="d-flex justify-content-center">
             <div className="goalBlock">
               <img src={goal4} alt="goal" />
-              <p>Retire early</p>
+              <p>تقاعد مبكرا</p>
             </div>
+
             <div className="goalBlock">
               <img src={goal2} alt="goal" />
-              <p>Buy a home</p>
+              <p>تملك منزل</p>
             </div>
             <div className="goalBlock">
               <img src={goal5} alt="goal" />
-              <p>Save for a kid's education</p>
+              <p>الادخار لتعليم الاطفال</p>
             </div>
             <div className="goalBlock">
               <img src={goal3} alt="goal" />
-              <p>Pay for a wedding</p>
+              <p>التخطيط لمصاريف الزواج</p>
             </div>
             <div className="goalBlock">
               <img src={goal1} alt="goal" />
-              <p>Take the trip of a lifetime</p>
+              <p>الادخار لتجربة رحلة العمر</p>
             </div>
           </div>
         </div>
@@ -264,20 +261,20 @@ export default function Landing() {
       <div className="container my-3">
         <div className="row justify-content-center">
           <div className="col-md-6">
-            <div className="registration-form">
+            <div class="registration-form">
               <header>
                 <h3 className="m-0">Join us</h3>
                 <p>Join our waiting List</p>
               </header>
-              <div className="input-section email-section">
+              <div class="input-section email-section">
                 <input
-                  className="email"
+                  class="email"
                   type="email"
                   placeholder="Enter your email"
                   autocomplete="off"
                 />
-                <div className="animated-button">
-                  <button className="btn btn-success" onClick={shoot}>
+                <div class="animated-button">
+                  <button class="btn btn-success" onClick={shoot}>
                     <h3 className="text-white">Join</h3>
                   </button>
                 </div>
@@ -296,54 +293,55 @@ export default function Landing() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-4">
-              <h3>How It Works</h3>
-              <p>Automated Investment Management</p>
+              <h3>كيف نعمل</h3>
+              <p>إدارة الاستثمار الآلي</p>
             </div>
             <div className="col-md-3">
               <div className="howBlock">
-                <p className="secondaryC">Step 1</p>
+                <p className="secondaryC">الخطوة ١</p>
                 <img src={how1} alt="how" />
                 <p className="my-3 secondaryC text-uppercase">
-                  ANSWER Questionnaire
+                  الإجابة على الاستبيان
                 </p>
                 <p className="m-0">
-                  Answer few questions to evaluate your investment risk
-                  tolerance.
+                  أجب عن بعض الأسئلة لتقييم مدى تحملك لمخاطر الاستثمار
                 </p>
               </div>
             </div>
             <div className="col-md-3 position-relative">
               <img src={howrect2} alt="how" className="howrect2" />
               <div className="howBlock">
-                <p className="secondaryC">Step 2</p>
+                <p className="secondaryC">الخطوة ٢</p>
                 <img src={how2} alt="how" />
-                <p className="my-3 secondaryC">VIEW PORTFOLIO</p>
+                <p className="my-3 secondaryC">الاطلاع على المحفظة المقترحة</p>
                 <p className="m-0">
-                  Know about your diversified global portfolio of ETFs with a
-                  long term focus on risk-optimised returns.
+                  تعرف على محفظتك العالمية المتنوعة من صناديق الاستثمار
+                  المتداولة مع التركيز طويل الأجل على العوائد المحسّنة مقابل
+                  المخاطر
                 </p>
               </div>
             </div>
             <div className="col-md-3">
               <div className="howBlock">
-                <p className="secondaryC">Step 3</p>
+                <p className="secondaryC">الخطوة ٣</p>
                 <img src={how3} alt="how" />
-                <p className="my-3 secondaryC">CREATE ACCOUNT</p>
+                <p className="my-3 secondaryC">إنشاء حساب</p>
                 <p className="m-0">
-                  Get your Statement of Advice. Sign the MDA contract to allow
-                  us to serve you. We create a brokerage account for you.
+                  تفضل بالاطلاع على مشورتك الاستثمارية المقدمة من بلومال مع
+                  التوقيع على الشروط والأحكام ودع لنا عملية تأسيس محفظتك
+                  الاستثمارية مع شريك محلي موثوق
                 </p>
                 <img src={howrect4} alt="how" className="howrect4" />
               </div>
             </div>
             <div className="col-md-3">
               <div className="howBlock">
-                <p className="secondaryC">Step 4</p>
+                <p className="secondaryC">الخطوة ٤</p>
                 <img src={how4} alt="how" />
-                <p className="my-3 secondaryC">INVEST</p>
+                <p className="my-3 secondaryC">استثمر</p>
                 <p className="m-0">
-                  Invest in your suggested or preferred Blomal portfolios for a
-                  low fee and select any alpha strategies you want in addition!.
+                  استثمر في محافظ Blomal المقترحة أو المفضلة لديك مقابل رسوم
+                  منخفضة وحدد أي استراتيجيات جديدة مستقبلية تريدها
                 </p>
               </div>
             </div>
@@ -355,62 +353,59 @@ export default function Landing() {
         <div className="container">
           <div className="row">
             <div className="col-md-12 mb-4">
-              <h3 className="text-center mb-5">Asked Questions</h3>
+              <h3 className="text-center mb-5">أسئلة متكررة</h3>
               <img src={faq} alt="faq" className="faq" />
               <Accordion>
                 <AccordionItem>
                   <AccordionItemHeading>
-                    <AccordionItemButton>What is Blomal</AccordionItemButton>
+                    <AccordionItemButton>ماهو بلومال</AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      ● Blomal is a digital platform that provides automated,
-                      algorithmic investment services with minimal human
-                      supervision.
+                      ● عبارة عن منصة رقمية توفر خدمات استثمار تلقائية تعتمد على
+                      الخوارزميات مع الحد الأدنى من التدخل البشري.
                     </p>
                     <p>
-                      ● Blomal automate and optimize passive indexing strategies
-                      based on modern portfolio theory
-                    </p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem>
-                  <AccordionItemHeading>
-                    <AccordionItemButton>
-                      What investments does Blomal offer?
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p>
-                      For each of your financial goals, Blomal recommends a
-                      specific portfolio allocation of our recommended portfolio
-                      strategy. This portfolio strategy is designed to reflect
-                      the total world market to help maximize expected returns
-                      while minimizing risk.
+                      ● بلومال تعمل على أتمتة وتحسين استراتيجيات الاستثمار الغير
+                      نشط معتمدا على نظرية المحفظة الحديثة.
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      The importance of long term compound Investing?
+                      ما هي الاستثمارات التي يقدمها بلومال؟
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      Compounding is the ability of an asset to generate
-                      earnings, which are then reinvested or remain invested
-                      with the goal of generating their own earnings. In other
-                      words, compounding refers to generating earnings from
-                      previous earnings. The wonder of compounding (sometimes
-                      called “compound interest”) has the potential to transform
-                      your working money into an income-generating tool.
-                      Compounding is the process of generating earnings on an
-                      asset’s reinvested earnings. To work, it requires three
-                      things: the original investment remains invested, the
-                      reinvestment of earnings and time. The more time you give
-                      your investments, the more you may be able to accelerate
-                      the income potential of your original investment.
+                      لكل هدف من أهدافك المالية ، توصي بلومال بتخصيص محفظة محددة
+                      لاستراتيجية المحفظة التي نوصي بها. تم تصميم إستراتيجية
+                      المحفظة هذه لتعكس إجمالي عوائد الأسواق العالمية وذلك
+                      للمساعدة في تعظيم العوائد المتوقعة مع تقليل المخاطر.
+                    </p>
+                  </AccordionItemPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <AccordionItemHeading>
+                    <AccordionItemButton>
+                      أهمية الاستثمار المركب طويل الأجل؟
+                    </AccordionItemButton>
+                  </AccordionItemHeading>
+                  <AccordionItemPanel>
+                    <p>
+                      المضاعفة المالية هي قدرة الأصل على تحقيق أرباح ، والتي يتم
+                      إعادة استثمارها بعد ذلك أو تظل مستثمرة بهدف تحقيق أرباحها
+                      الخاصة. بمعنى آخر ، يشير المركب إلى تحقيق أرباح من الأرباح
+                      السابقة. إن عجائب المضاعفة (تسمى أحيانًا "الفائدة
+                      المركبة") لديها القدرة على تحويل أموال العمل الخاصة بك إلى
+                      أداة مدرة للدخل. المضاعفة هي عملية تحقيق أرباح على أرباح
+                      الأصول المعاد استثمارها يتطلب الأمر ثلاثة أشياء: <br />
+                      يظل الاستثمار الأصلي مستثمرًا <br />
+                      إعادة استثمار الأرباح والوقت
+                      <br />
+                      وكلما زاد الوقت الذي تمنحه لاستثماراتك زادت قدرتك على
+                      تسريع الدخل المحتمل لاستثمارك الأصلي.
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
@@ -422,30 +417,23 @@ export default function Landing() {
                   </AccordionItemHeading>
                   <AccordionItemPanel>
                     <p>
-                      Dollar-cost averaging (DCA), is making regularly scheduled
-                      investments into an investment fund over a long period of
-                      time. For example, investing an equal amount on the 15th
-                      of every month. DCA has been an extremely controversial
-                      and hotly debated approach to investing. This applies both
-                      to practitioners and theoreticians, as well as internet
-                      discussion groups, which contain lively debates on the
-                      subject, with a fascinating mixture of beliefs,
-                      prejudices, opinions, facts and statistics. So, what are
-                      investors to believe and do? Read on to learn both sides
-                      of the argument.
+                      يقوم مبدأ متوسط التكلفة بالدولار (DCA) ، باستثمارات مجدولة
+                      بانتظام في صندوق استثمار على مدى فترة طويلة من الزمن. على
+                      سبيل المثال ، استثمار مبلغ مساوٍ في اليوم الخامس عشر من كل
+                      شهر. يعد هذا النهج مفيد جدا لتفادي توقيت الاستثمار الخاطئ
+                      كما يعمل هذا المبدأ على تقليل مخاطر السوق و يساعد على ضمان
+                      عوائد مجزية
                     </p>
                   </AccordionItemPanel>
                 </AccordionItem>
                 <AccordionItem>
                   <AccordionItemHeading>
                     <AccordionItemButton>
-                      Can I move my money out if I want to?
+                      هل يمكنني إخراج أموالي إذا أردت ذلك؟
                     </AccordionItemButton>
                   </AccordionItemHeading>
                   <AccordionItemPanel>
-                    <p>
-                      Yes, you can withdraw your money at any time with no fees
-                    </p>
+                    <p>نعم ، يمكنك سحب أموالك في أي وقت بدون رسوم</p>
                   </AccordionItemPanel>
                 </AccordionItem>
               </Accordion>
@@ -457,39 +445,39 @@ export default function Landing() {
         <div className="container mb-5 pt-5">
           <div className="row justify-content-center">
             <div className="col-md-8">
-              <form className="modernForm">
+              <form class="modernForm">
                 <div className="row">
-                  <div className="col-md-12 mb-3">
-                    <h3>Contact us</h3>
+                  <div class="col-md-12 mb-3">
+                    <h3>اتصل بنا</h3>
                   </div>
-                  <div className="col-md-6 group">
+                  <div class="col-md-6 group">
                     <input type="text" required></input>
-                    <span className="bar"></span>
-                    <label>First Name</label>
+                    <span class="bar"></span>
+                    <label>الأسم الاول</label>
                   </div>
-                  <div className="col-md-6 group">
+                  <div class="col-md-6 group">
                     <input type="text" required></input>
-                    <span className="bar"></span>
-                    <label>Last Name</label>
+                    <span class="bar"></span>
+                    <label>الأسم الاخير</label>
                   </div>
-                  <div className="col-md-6 group">
+                  <div class="col-md-6 group">
                     <input type="email" required></input>
-                    <span className="bar"></span>
-                    <label>Email</label>
+                    <span class="bar"></span>
+                    <label>الايميل</label>
                   </div>
-                  <div className="col-md-6 group">
+                  <div class="col-md-6 group">
                     <input type="text" required></input>
-                    <span className="bar"></span>
-                    <label>Phone</label>
+                    <span class="bar"></span>
+                    <label>الهاتف</label>
                   </div>
-                  <div className="col-md-12 group">
+                  <div class="col-md-12 group">
                     <textarea type="text" required></textarea>
-                    <span className="bar"></span>
-                    <label>Message</label>
+                    <span class="bar"></span>
+                    <label>نص الرسالة</label>
                   </div>
-                  <div className="col-md-12 text-end">
+                  <div class="col-md-12 text-end">
                     <button className="btn btn-primary">
-                      <i className="fa fa-paper-plane text-white"></i> Send
+                      <i className="fa fa-paper-plane text-white"></i> ارسال
                     </button>
                   </div>
                 </div>
@@ -502,18 +490,15 @@ export default function Landing() {
       <section className="waitingApproval">
         <div className="container m-auto">
           <p className=" text-white">
-            Blomal Finance is a limited liability company with commercial
-            registration number 4030443697 under the procedures for obtaining a
-            permit from the Capital Market Authority.
+            بلومال كابيتال هي شركة ذات مسؤولية محدودة بسجل تجاري رقم 4030443697
+            بموجب إجراءات الحصول على تصريح من هيئة السوق المالية.
           </p>
         </div>
       </section>
 
       <footer>
         <div className="container m-auto p-3">
-          <p className="text-center m-0">
-            Copyright © 2022 Blomal All Rights Reserved.
-          </p>
+          <p className="text-center m-0">© 2022 حقوق النشر محفوظة لبلومال</p>
         </div>
       </footer>
     </div>

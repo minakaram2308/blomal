@@ -1,0 +1,45 @@
+﻿*{
+    font-family: 'droid';
+    direction: rtl;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: droid;
+    font-weight: 600;
+}
+.nav-link{
+    font-family: droid !important;
+}
+.en {
+    font-family: Jali-r !important;
+    font-weight: 400 !important;
+    font-size: 1.2rem !important;
+}
+.lang {
+    margin-bottom: 2px;
+}
+.modernForm label {
+    right: 15px;
+}
+.howBlock .secondaryC{
+    font-weight: 600;
+}
+.accordion__button{
+    text-align: right;
+}
+.accordion__button:before {
+    display: none
+}
+.accordion__button:after {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    /* margin-right: 12px; */
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(134deg);}
