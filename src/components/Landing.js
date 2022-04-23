@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import LandingAr from "../components/LandingAr";
 import {
   Accordion,
   AccordionItem,
@@ -6,6 +8,8 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+
+import { Navbar, Container, Nav } from "react-bootstrap";
 import "react-accessible-accordion/dist/fancy-example.css";
 import logo from "../assets/img/logo.png";
 import main from "../assets/img/thumb.png";
@@ -33,13 +37,33 @@ export default function Landing() {
     document.querySelector(".showbox").style.opacity = "0";
     document.querySelector(".showbox").style.zIndex = "-1";
   };
+  //   document.getElementsByClassName("nav-link").addEventListener("click", myFunction);
+  // function myFunction() {
+  //   document.getElementById("navbarScroll").classList.toggle("show");
+  // }
+  const userSelection = Object.values(
+    document.getElementsByClassName("nav-link")
+  );
+  userSelection.forEach((link) => {
+    link.addEventListener((event) => {
+      alert("jjjjjjjjjjjjjjjjjjjj");
+      document.getElementById("navbarScroll").classList.remove("show");
+      // more code here
+    });
+  });
   // const shoot = () => {
   //   document.querySelector(".email-section").classList.add("fold-up");
   //   document.getElementById("success").classList.add("mt-0");
-  // };
+  // };  
+<BrowserRouter>
+  <Routes>
+    <Route path="/LandingAr" element={<LandingAr />} />
+  </Routes>
+</BrowserRouter>
   return (
-    <div className="">
-      {/* mainHeader */}
+    <div>
+      {/* loader */}
+
       <div className="showbox">
         <div className="loader">
           <svg className="circular" viewBox="25 25 50 50">
@@ -56,63 +80,32 @@ export default function Landing() {
         </div>
       </div>
 
+      {/* mainHeader */}
       <section className="mainHeader" id="Home">
         <div className="container-fluid m-auto">
-          <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+          <Navbar expand="lg">
+            <Container fluid>
+              <Navbar.Brand href="#">
                 <img src={logo} alt="goal" />
-              </a>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-           
-              <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#Join">
-                      Join
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#About">
-                      About
-                    </a>
-                  </li>
+              </Navbar.Brand>
+              <Navbar.Toggle aria-controls="navbarScroll" />
+              <Navbar.Collapse id="navbarScroll">
+                <Nav className="ms-auto my-2 my-lg-0">
+                  <Nav.Link href="#Join">Join</Nav.Link>
+                  <Nav.Link href="#About">About</Nav.Link>
+                  <Nav.Link href="#HowItWorks">How It Works</Nav.Link>
+                  <Nav.Link href="#Faq">Faq</Nav.Link>
+                  <Nav.Link href="#Contact">Contact</Nav.Link>
+                  <Nav.Link href="#About" className="ar">
+                  <Link to="/LandingAr">My Profile</Link>
+                    عربى
+                    <img src={sa} className="lang" alt="العربية" />
+                  </Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
 
-                  <li className="nav-item">
-                    <a className="nav-link" href="#HowItWorks">
-                      How It Works
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#Faq">
-                      FAQ
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#Contact">
-                      Contact us
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link ar" href="#Contact">
-                      عربى
-                      <img src={sa} className="lang" alt="العربية" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
           <div className="row justify-content-center my-5 py-5">
             <div className="col-md-12 text-center m-auto">
               <h5 className="secondaryC mb-3">
